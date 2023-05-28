@@ -39,7 +39,7 @@
     <servlet-name>FlightsList</servlet-name>
     <url-pattern>/FlightsList</url-pattern>
   </servlet-mapping>
-    <servlet>
+  <servlet>
     <description></description>
     <display-name>FlightsListCriteria</display-name>
     <servlet-name>FlightsListCriteria</servlet-name>
@@ -48,5 +48,45 @@
   <servlet-mapping>
     <servlet-name>FlightsListCriteria</servlet-name>
     <url-pattern>/FlightsListCriteria</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ReservationProcess</display-name>
+    <servlet-name>ReservationProcess</servlet-name>
+    <servlet-class>com.flyaway.servlet.ReservationProcess</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReservationProcess</servlet-name>
+    <url-pattern>/ReservationProcess</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DataUpdate</display-name>
+    <servlet-name>DataUpdate</servlet-name>
+    <servlet-class>com.flyaway.servlet.DataUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DataUpdate</servlet-name>
+    <url-pattern>/DataUpdate</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>BookingManagement</display-name>
+    <servlet-name>BookingManagement</servlet-name>
+    <servlet-class>com.flyaway.servlet.BookingManagement</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BookingManagement</servlet-name>
+    <url-pattern>/BookingManagement</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PaymentProcessing</display-name>
+    <servlet-name>PaymentProcessing</servlet-name>
+    <servlet-class>com.flyaway.servlet.PaymentProcessing</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PaymentProcessing</servlet-name>
+    <url-pattern>/PaymentProcessing</url-pattern>
   </servlet-mapping>
 </web-app>

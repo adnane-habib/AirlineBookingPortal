@@ -190,14 +190,7 @@ public class FlightsDetails {
 				+ ", airLine=" + airLine + ", flightNumber=" + flightNumber + ", originAirport=" + originAirport
 				+ ", destinationAirport=" + destinationAirport + ", scheduledDeparture=" + scheduledDeparture
 				+ ", scheduledArrival=" + scheduledArrival + ", scheduledTime=" + scheduledTime + ", ticketPrice="
-				+ ticketPrice + ", freeSeats=" + freeSeats + ", getId()=" + getId() + ", getMonth()=" + getMonth()
-				+ ", getDay()=" + getDay() + ", getDayOfWeek()=" + getDayOfWeek() + ", getAirLine()=" + getAirLine()
-				+ ", getFlightNumber()=" + getFlightNumber() + ", getOriginAirport()=" + getOriginAirport()
-				+ ", getDestinationAirport()=" + getDestinationAirport() + ", getScheduledDeparture()="
-				+ getScheduledDeparture() + ", getScheduledArrival()=" + getScheduledArrival() + ", getScheduledTime()="
-				+ getScheduledTime() + ", getTicketPrice()=" + getTicketPrice() + ", getFreeSeats()=" + getFreeSeats()
-				+ ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString()
-				+ "]";
+				+ ticketPrice + ", freeSeats=" + freeSeats ;
 	}
 
 	@Override
