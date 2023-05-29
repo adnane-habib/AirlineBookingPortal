@@ -89,4 +89,14 @@
     <servlet-name>PaymentProcessing</servlet-name>
     <url-pattern>/PaymentProcessing</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>FindAirportCode</display-name>
+    <servlet-name>FindAirportCode</servlet-name>
+    <servlet-class>com.flyaway.servlet.FindAirportCode</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FindAirportCode</servlet-name>
+    <url-pattern>/FindAirportCode</url-pattern>
+  </servlet-mapping>
 </web-app>

@@ -93,7 +93,7 @@ public class PaymentProcessing extends HttpServlet {
 			out.println(new Timestamp(System.currentTimeMillis()));
 			out.println("<br>");
 			PaymentTable transaction = new PaymentTable(bookingID, request.getParameter("cardfname"), request.getParameter("cardlname"), 
-					bookingID+request.getParameter("cardlname"),	StringUtils.right(request.getParameter("card"),4), 
+					bookingID+request.getParameter("cardlname"), "****-****-****-"+StringUtils.right(request.getParameter("card"),4), 
 					PAID, BigDecimal.valueOf(balance),new Timestamp(System.currentTimeMillis()));
 			try {
 				tx = session.beginTransaction();

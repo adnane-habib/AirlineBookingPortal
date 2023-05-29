@@ -1,3 +1,5 @@
+<%@page import="com.flyaway.entities.AirportsDetails"%>
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -14,8 +16,9 @@
 	if (request.getParameter("error") != null)
 		out.println("<b>Your session has expired or credentials are invalid.</b><br>");
 	%>
-
+	
 <!-- 	<form action="list-of-flights.jsp" method="post"> -->
+<h2>If you know the airport IATA code, use the form below</h2>
 	<form action="FlightsListCriteria" method="post">
 	
 		<div style="padding-left:88px; padding-bottom:10px">Departure Airport <input name="origin" id="origin" maxlength=40></div>
@@ -24,6 +27,13 @@
 		<div style="padding-left:13px; padding-bottom:10px">Departure Date Day (1 to 31) <input name="day" id="day" maxlength=2></div>
 		<div style="padding-left:325px; padding-bottom:10px"><button>Submit</button></div>
 
+	</form>
+
+<h2>If you prefer searching for the airport code, use the form below</h2>	
+	<form action="FindAirportCode" method="get">	
+		<div style="padding-left:88px; padding-bottom:10px">Departure City <input name="origincity" id="origincity" maxlength=40></div>
+		<div style="padding-left:77px; padding-bottom:10px">Destination City <input name="destinationcity" id="destinationcity" maxlength=40></div>
+		<div style="padding-left:325px; padding-bottom:10px"><button>Submit</button></div>
 	</form>
 	
 	

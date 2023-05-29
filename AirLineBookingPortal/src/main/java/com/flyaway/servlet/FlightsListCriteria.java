@@ -149,7 +149,7 @@ public class FlightsListCriteria extends HttpServlet {
 					"<td><a href=\"FlightsList?id="+flight.getId()+"\"> book here </a>"+
 					"</tr>");
 		}
-		request.setAttribute("result", flightsList);
+		httpsession.setAttribute("result", flightsList);
 		
 		session.close();
 		out.println("</table><br><br>");
